@@ -11,7 +11,8 @@
 |--------------|-----------|------------------|----------|------|--------|--------------|
 | MRR, Users, Churn | Commits, PRs, Streak | BTC, Altcoins, Fear | GitHub, Weather, Tasks | Smart Home, Bills | Twitter, YouTube | Pomodoro, Habits |
 
-![Screenshot](https://via.placeholder.com/1200x600/0a0a0f/ffffff?text=OpenBento+7Dashboards)
+<img width="624" height="404" alt="OpenBento" src="https://github.com/user-attachments/assets/f835c2cd-478e-42b6-9ff5-6c2b216df935" />
+
 
 ## ✨ Features
 
