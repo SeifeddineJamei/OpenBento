@@ -1,9 +1,8 @@
 import * as React from 'react';
 import * as Lucide from 'lucide-react';
-const { CloudRain, List, FileText, Github } = Lucide;
+const { CloudRain, FileText, GitBranch } = Lucide;
 import { motion } from 'framer-motion';
 import type { Widget } from '../../data/dashboard-config';
-import { cn } from '../../utils';
 
 function Weather() {
   return (
@@ -54,7 +53,7 @@ function PersonalGitHubStats() {
     <div className="flex flex-col h-full space-y-6">
       <div className="flex items-center gap-3">
         <div className="p-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl">
-          <Github className="h-6 w-6 text-purple-400" />
+          <GitBranch className="h-6 w-6 text-purple-400" />
         </div>
         <div>
           <h3 className="font-semibold text-zinc-200">GitHub Stats</h3>
