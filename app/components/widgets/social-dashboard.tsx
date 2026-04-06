@@ -1,16 +1,15 @@
 import * as React from 'react';
 import * as Lucide from 'lucide-react';
-const { Twitter, Youtube, Users, MessageCircle } = Lucide;
+const { Send, PlayCircle, Users, MessageCircle } = Lucide;
 import { motion } from 'framer-motion';
 import type { Widget } from '../../data/dashboard-config';
-import { cn } from '../../utils';
 
 function TwitterFeed() {
 
   return (
     <div className="p-6 rounded-3xl bg-zinc-900 border border-zinc-800 flex flex-col h-full">
       <div className="flex items-center gap-3 mb-4">
-        <Twitter className="text-blue-400 h-8 w-8" />
+        <Send className="text-blue-400 h-8 w-8" />
         <p className="font-semibold">Recent Tweets</p>
       </div>
       <div className="space-y-3 flex-1">
@@ -30,7 +29,7 @@ function TwitterFeed() {
 function YouTubeStats() {
   return (
     <div className="p-6 rounded-3xl bg-zinc-900 border border-zinc-800">
-      <Youtube className="text-red-400 mb-4 h-12 w-12" />
+      <PlayCircle className="text-red-400 mb-4 h-12 w-12" />
       <p className="text-zinc-400 text-xs">Subscribers</p>
       <p className="text-2xl font-bold">12.4k</p>
     </div>
