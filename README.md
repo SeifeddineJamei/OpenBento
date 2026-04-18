@@ -1,6 +1,6 @@
 # OpenBento 🥢
 
-[![Star on GitHub](https://img.shields.io/github/stars/https://github.com/SeifeddineJamei/OpenBento?style=social)](https://github.com/yourusername/OpenBento)
+[![Star on GitHub](https://img.shields.io/github/stars/https://github.com/SeifeddineJamei/OpenBento?style=social)](https://github.com/SeifeddineJamei/OpenBento)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Professional 7-Dashboards Bento Grid Ecosystem.** Modular, animated dashboards with real metrics, themes, persistence. Contribute widgets via PR!
