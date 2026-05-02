@@ -1,0 +1,112 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behavior in OpenBento
+title: "[BUG]: "
+labels: ["bug", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for reporting an issue!
+        Please fill out the form below to help us fix it quickly.
+
+  - type: dropdown
+    id: dashboard
+    attributes:
+      label: Which dashboard has the issue?
+      options:
+        - SaaS Metrics
+        - Dev Stats
+        - Crypto/Portfolio
+        - Personal Home
+        - Social Dashboard
+        - Productivity
+        - Multiple dashboards
+        - Other/Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Brief issue title
+      placeholder: "e.g., Chart not loading on Safari"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly
+      placeholder: "When I click on X, Y happens instead of Z..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce this issue?
+      value: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Does this happen in both themes?
+      options:
+        - Yes, both Dark and Light
+        - Only in Dark mode
+        - Only in Light mode
+        - Not tested
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & version
+      placeholder: "Chrome 120, Safari 17, Firefox 121"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: "Windows 11, macOS 14, iOS 17"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Recordings
+      description: Drag and drop images or videos here
+      placeholder: "Add screenshots to help explain the issue"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Confirmation Checklist
+      options:
+        - label: I've searched existing issues
+          required: true
+        - label: I'm on the latest version
+          required: true
+        - label: I've tested on multiple devices (if possible)
+          required: false
