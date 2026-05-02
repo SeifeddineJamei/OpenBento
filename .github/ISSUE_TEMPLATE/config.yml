@@ -1,0 +1,6 @@
+# .github/ISSUE_TEMPLATE/config.yml
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/SeifeddineJamei/OpenBento/discussions
+    about: Ask questions or share ideas before creating an issue
