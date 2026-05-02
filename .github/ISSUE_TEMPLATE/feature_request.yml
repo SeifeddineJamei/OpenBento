@@ -1,0 +1,89 @@
+name: ✨ Feature Request
+description: Suggest a new widget, dashboard, or improvement
+title: "[FEATURE]: "
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for contributing to OpenBento!
+        We welcome widget contributions via PRs!
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature category
+      options:
+        - New widget for existing dashboard
+        - New dashboard
+        - UI/UX improvement
+        - Performance enhancement
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dashboard
+    attributes:
+      label: Which dashboard does this affect?
+      options:
+        - SaaS Metrics
+        - Dev Stats
+        - Crypto/Portfolio
+        - Personal Home
+        - Social Dashboard
+        - Productivity
+        - All dashboards
+        - New dashboard
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Feature title
+      placeholder: "e.g., Add GitHub streak widget to Dev Stats"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature
+      description: What problem does this solve? What value does it add?
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockup / Design reference
+      description: Paste Figma links, screenshots, or ASCII art
+      placeholder: "Attach design mockups or describe the visual layout"
+
+  - type: textarea
+    id: api
+    attributes:
+      label: Data source / API requirements
+      description: What data would this widget need? Is it free/public?
+      placeholder: "e.g., GitHub REST API, free tier available, requires API key"
+
+  - type: checkboxes
+    id: pr
+    attributes:
+      label: Contribution
+      options:
+        - label: I'm willing to submit a Pull Request for this feature
+          required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I've searched existing issues/PRs for this feature
+          required: true
+        - label: This fits OpenBento's MIT License mission
+          required: true
